@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vitis-algs"
+version = "0.1.0"
+description = "VAE-based latent space modeling and phylogenetic analysis for Vitis vinifera expression data"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0",
+    "torchvision",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+    "pyyaml",
+    "biopython",
+    "scikit-bio"
+]
+
+[project.optional-dependencies]
+dev = ["black", "flake8", "ipykernel", "jupyter", "pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

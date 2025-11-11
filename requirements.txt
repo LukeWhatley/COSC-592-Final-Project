@@ -1,0 +1,10 @@
+-e .
+torch>=2.0
+pandas
+numpy
+scikit-learn
+scipy
+matplotlib
+pyyaml
+biopython
+scikit-bio
